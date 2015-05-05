@@ -16,32 +16,15 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<!doctype html>
-<html>
-<head>
-    <meta charset=\"gb2312\">
-    <title>个人博客模板（寻梦）</title>
-    <meta name=\"keywords\" content=\"个人博客模板,博客模板\" />
-    <meta name=\"description\" content=\"寻梦主题的个人博客模板，优雅、稳重、大气,低调。\" />
-    <link href=\"";
-        // line 8
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/css/base.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-    <link href=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/css/index.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-    <!--[if lt IE 9]>
-    <script src=\"";
-        // line 11
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/js/modernizr.js"), "html", null, true);
-        echo "\"></script>
-    <![endif]-->
-</head>
-<body>
+        $this->env->loadTemplate("@BlogWeb/head.html.twig")->display($context);
+        // line 2
+        echo "<body>
 <header>
     <div id=\"logo\"><a href=\"/\"></a></div>
-    <nav class=\"topnav\" id=\"topnav\"><a href=\"index.html\"><span>首页</span><span class=\"en\">Protal</span></a><a href=\"about.html\"><span>关于我</span><span class=\"en\">About</span></a><a href=\"newlist.html\"><span>慢生活</span><span class=\"en\">Life</span></a><a href=\"moodlist.html\"><span>碎言碎语</span><span class=\"en\">Doing</span></a><a href=\"share.html\"><span>模板分享</span><span class=\"en\">Share</span></a><a href=\"knowledge.html\"><span>学无止境</span><span class=\"en\">Learn</span></a><a href=\"book.html\"><span>留言版</span><span class=\"en\">Gustbook</span></a></nav>
+    <nav class=\"topnav\" id=\"topnav\"><a href=\"index\"><span>首页</span><span class=\"en\">Protal</span></a><a href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("about"), "html", null, true);
+        echo "\"><span>关于我</span><span class=\"en\">About</span></a><a href=\"newlist\"><span>慢生活</span><span class=\"en\">Life</span></a><a href=\"moodlist\"><span>碎言碎语</span><span class=\"en\">Doing</span></a><a href=\"share\"><span>模板分享</span><span class=\"en\">Share</span></a><a href=\"knowledge\"><span>学无止境</span><span class=\"en\">Learn</span></a><a href=\"book\"><span>留言版</span><span class=\"en\">Gustbook</span></a></nav>
     </nav>
 </header>
 <div class=\"banner\">
@@ -57,31 +40,31 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
 <div class=\"template\">
     <div class=\"box\">
         <h3>
-            <p><span>个人博客</span>模板 Templates</p>
+            <p><span>博客</span>模板 Templates</p>
         </h3>
         <ul>
             <li><a href=\"/\"  target=\"_blank\"><img src=\"";
-        // line 36
+        // line 24
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/01.jpg"), "html", null, true);
         echo "\"></a><span>仿新浪博客风格・梅――古典个人博客模板</span></li>
             <li><a href=\"/\" target=\"_blank\"><img src=\"";
-        // line 37
+        // line 25
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/02.jpg"), "html", null, true);
         echo "\"></a><span>黑色质感时间轴html5个人博客模板</span></li>
             <li><a href=\"/\"  target=\"_blank\"><img src=\"";
-        // line 38
+        // line 26
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/03.jpg"), "html", null, true);
         echo "\"></a><span>Green绿色小清新的夏天-个人博客模板</span></li>
             <li><a href=\"/\" target=\"_blank\"><img src=\"";
-        // line 39
+        // line 27
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/04.jpg"), "html", null, true);
         echo "\"></a><span>女生清新个人博客网站模板</span></li>
             <li><a href=\"/\"  target=\"_blank\"><img src=\"";
-        // line 40
+        // line 28
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/02.jpg"), "html", null, true);
         echo "\"></a><span>黑色质感时间轴html5个人博客模板</span></li>
             <li><a href=\"/\"  target=\"_blank\"><img src=\"";
-        // line 41
+        // line 29
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/03.jpg"), "html", null, true);
         echo "\"></a><span>Green绿色小清新的夏天-个人博客模板</span></li>
         </ul>
@@ -94,7 +77,7 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
     <div class=\"bloglist left\">
         <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
         <figure><img src=\"";
-        // line 51
+        // line 39
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/001.png"), "html", null, true);
         echo "\"></figure>
         <ul>
@@ -104,7 +87,7 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
         <p class=\"dateview\"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href=\"/news/life/\">程序人生</a>]</span></p>
         <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
         <figure><img src=\"";
-        // line 58
+        // line 46
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/001.png"), "html", null, true);
         echo "\"></figure>
         <ul>
@@ -114,7 +97,7 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
         <p class=\"dateview\"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href=\"/news/life/\">程序人生</a>]</span></p>
         <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
         <figure><img src=\"";
-        // line 65
+        // line 53
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/001.png"), "html", null, true);
         echo "\"></figure>
         <ul>
@@ -124,7 +107,7 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
         <p class=\"dateview\"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href=\"/news/life/\">程序人生</a>]</span></p>
         <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
         <figure><img src=\"";
-        // line 72
+        // line 60
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/001.png"), "html", null, true);
         echo "\"></figure>
         <ul>
@@ -134,7 +117,7 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
         <p class=\"dateview\"><span>2013-11-04</span><span>作者：杨青</span><span>个人博客：[<a href=\"/news/life/\">程序人生</a>]</span></p>
         <h3>程序员请放下你的技术情节，与你的同伴一起进步</h3>
         <figure><img src=\"";
-        // line 79
+        // line 67
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/images/001.png"), "html", null, true);
         echo "\"></figure>
         <ul>
@@ -192,7 +175,10 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
 <footer>
     <p>Design by DanceSmile <a href=\"http://www.miitbeian.gov.cn/\" target=\"_blank\">蜀ICP备11002373号-1</a> <a href=\"/\">网站统计</a></p>
 </footer>
-<script src=\"js/silder.js\"></script>
+<script src=\"";
+        // line 123
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/blogweb/js/silder.js"), "html", null, true);
+        echo "\"></script>
 </body>
 </html>
 ";
@@ -210,6 +196,6 @@ class __TwigTemplate_28b9f9fbbe8240e6bc8d463adb83579e67f66f58fd5ca59a80007288bf6
 
     public function getDebugInfo()
     {
-        return array (  138 => 79,  128 => 72,  118 => 65,  108 => 58,  98 => 51,  85 => 41,  81 => 40,  77 => 39,  73 => 38,  69 => 37,  65 => 36,  37 => 11,  32 => 9,  28 => 8,  19 => 1,);
+        return array (  180 => 123,  121 => 67,  111 => 60,  101 => 53,  91 => 46,  81 => 39,  68 => 29,  64 => 28,  60 => 27,  56 => 26,  52 => 25,  48 => 24,  26 => 5,  21 => 2,  19 => 1,);
     }
 }

@@ -25,12 +25,12 @@ class BlogController extends Controller
     }
 
     /**
-     * @Route("/about/{name}", name="about")
+     * @Route("/about")
      * @Template()
      */
-    public function aboutAction($name)
+    public function aboutAction()
     {
-        return new Response('<html><body><h1>Hello '.$name.'!</h1></body></html>');
+        return array();
     }
 
     /**

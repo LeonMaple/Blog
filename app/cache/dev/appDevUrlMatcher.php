@@ -127,9 +127,9 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Blog\\WebBundle\\Controller\\BlogController::indexAction',  '_route' => 'blog_web_blog_index',);
         }
 
-        // about
-        if (0 === strpos($pathinfo, '/about') && preg_match('#^/about/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'about')), array (  '_controller' => 'Blog\\WebBundle\\Controller\\BlogController::aboutAction',));
+        // blog_web_blog_about
+        if ($pathinfo === '/about') {
+            return array (  '_controller' => 'Blog\\WebBundle\\Controller\\BlogController::aboutAction',  '_route' => 'blog_web_blog_about',);
         }
 
         // blog_web_blog_caselist
