@@ -11,4 +11,9 @@ namespace Blog\AdminBundle\Controller;
 
 class IndexController {
 
+    public function indexAction()
+    {
+
+    }
+
 }
